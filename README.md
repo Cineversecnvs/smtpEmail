@@ -1,1 +1,91 @@
-# smtpEmail
+# Go Email Utility
+
+A simple command-line utility for sending emails using SMTP in Go. This tool allows you to send emails directly from the command line with customizable parameters.
+
+## Project Structure
+
+```
+go-email-utility
+├── main.go               # Complete email utility implementation
+└── README.md             # Project documentation
+```
+
+## Features
+
+- Send emails via SMTP with TLS encryption
+- Command-line interface with flags
+- Support for custom SMTP servers
+- Configurable email content (subject, body)
+- Error handling and validation
+
+## Getting Started
+
+### Prerequisites
+
+- Go 1.16 or later
+- An SMTP server (e.g., Gmail, Outlook, SendGrid, etc.)
+
+### Installation
+
+1. Clone or download the project:
+
+   ```bash
+   git clone <repository-url>
+   cd go-email-utility
+   ```
+
+2. Initialize the Go module (if not already done):
+
+   ```bash
+   go mod init go-email-utility
+   ```
+
+## Usage
+
+Run the utility with command-line flags:
+
+```bash
+go run main.go -server <smtp-server> -username <email> -password <password> -from <sender> -to <recipient> [options]
+```
+
+### Required Parameters
+
+- `-host`: SMTP server address (e.g., smtp.gmail.com)
+- `-username`: SMTP username (usually your email address)
+- `-password`: SMTP password or app password
+- `-from`: Sender email address
+- `-to`: Recipient email address
+
+### Optional Parameters
+
+- `-port`: SMTP port (default: 587)
+- `-subject`: Email subject (default: "Test Email")
+- `-body`: Email body content (default: "This is a test email.")
+
+### Examples
+
+#### Gmail Example
+
+```bash
+smtpEmail \
+  -host smtp.gmail.com \
+  -port 587 \
+  -username your@gmail.com \
+  -password your-app-password \
+  -from your@gmail.com \
+  -to recipient@example.com \
+  -subject "Hello from Go!" \
+  -body "This email was sent using Go!"
+```
+
+smtpEmail \
+  -host email-smtp.us-east-1.amazonaws.com \
+  -port 587 \
+  -username AKIAY34HZKWAQJI4YLEB \
+  -password BCz4n/upIiMkke6XJm5/UUvpZxLzy1MkqqSs95G5U/yE \
+  -from admin@cineverse.com \
+  -to sudipta05@gmail.com \
+  -subject Test  \
+  -body "Hello from"
+
+#### Outlook Example
