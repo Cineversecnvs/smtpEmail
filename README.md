@@ -81,10 +81,10 @@ smtpEmail \
 smtpEmail \
   -host email-smtp.us-east-1.amazonaws.com \
   -port 587 \
-  -username AKIAY34HZKWAQJI4YLEB \
-  -password BCz4n/upIiMkke6XJm5/UUvpZxLzy1MkqqSs95G5U/yE \
-  -from admin@cineverse.com \
-  -to sudipta05@gmail.com \
+  -username xxxxxxxxx \
+  -password xxxxxxxxxxxxxxxxxxxxxxxxxx \
+  -from me@gmail.com \
+  -to friend@gmail.com \
   -subject Test  \
   -body "Hello from"
 
