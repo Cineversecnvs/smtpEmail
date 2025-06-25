@@ -64,8 +64,6 @@ go run main.go -server <smtp-server> -username <email> -password <password> -fro
 
 ### Examples
 
-#### Gmail Example
-
 ```bash
 smtpEmail \
   -host smtp.gmail.com \
@@ -77,15 +75,18 @@ smtpEmail \
   -subject "Hello from Go!" \
   -body "This email was sent using Go!"
 ```
+### OS Specific
 
-smtpEmail \
-  -host email-smtp.us-east-1.amazonaws.com \
-  -port 587 \
-  -username xxxxxxxxx \
-  -password xxxxxxxxxxxxxxxxxxxxxxxxxx \
-  -from me@gmail.com \
-  -to friend@gmail.com \
-  -subject Test  \
-  -body "Hello from"
+Windows:
 
-#### Outlook Example
+Install the .exc file and run the below command-
+.\smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+
+Linux:
+Install the linux file and run the below command-
+./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+
+mac:
+Install the mac file and run the below command-
+./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+
