@@ -11,7 +11,7 @@ go-email-utility
 |__ go.mod                # Minimum GO version
 |__ smtpEmailMac          # Executable file for mac
 |__ smtpEmailWindows.exe  # Executable file for windows
-|__ smtpEmaillinux        # Executable file for linux 
+|__ smtpEmailLinux        # Executable file for linux 
 ```
 
 ## Features
@@ -90,7 +90,7 @@ Windows:
 - Now you can check the receipent mailbox
 
 Linux:
-- Install the smtpEmaillinux file 
+- Install the smtpEmailLinux file 
 - run the below command
 ./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
 - You will get this message "Email sent successfully!"
