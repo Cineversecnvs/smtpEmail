@@ -8,6 +8,10 @@ A simple command-line utility for sending emails using SMTP in Go. This tool all
 go-email-utility
 ├── main.go               # Complete email utility implementation
 └── README.md             # Project documentation
+|__ go.mod                # Minimum GO version
+|__ smtpEmailMac          # Executable file for mac
+|__ smtpEmailWindows.exe  # Executable file for windows
+|__ smtpEmaillinux        # Executable file for linux 
 ```
 
 ## Features
@@ -79,14 +83,23 @@ smtpEmail \
 
 Windows:
 
-Install the .exc file and run the below command-
-.\smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+- Install the smtpEmailWindows.exe file
+- run the below command
+.\smtpEmailWindows.exe -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+- You will get this message "Email sent successfully!"
+- Now you can check the receipent mailbox
 
 Linux:
-Install the linux file and run the below command-
+- Install the smtpEmaillinux file 
+- run the below command
 ./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+- You will get this message "Email sent successfully!"
+- Now you can check the receipent mailbox
 
 mac:
-Install the mac file and run the below command-
+- Install the smtpEmailMac file 
+- run the below command
 ./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+- You will get this message "Email sent successfully!"
+- Now you can check the receipent mailbox
 
