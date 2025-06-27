@@ -11,7 +11,7 @@ go-email-utility
 |__ go.mod                # Minimum GO version
 |__ smtpEmailMac          # Executable file for mac
 |__ smtpEmailWindows.exe  # Executable file for windows
-|__ smtpEmaillinux        # Executable file for linux 
+|__ smtpEmailLinux        # Executable file for linux 
 ```
 
 ## Features
@@ -100,9 +100,13 @@ Windows:
 ```
 
 Linux:
+<<<<<<< HEAD
 
 ```bash
 - Download the smtpEmailLinux file
+=======
+- Install the smtpEmailLinux file 
+>>>>>>> 2d9ba7636b8a90d667821036262a432e611b866d
 - run the below command
 ./smtpEmailLinux \
   -host smtp.gmail.com \
