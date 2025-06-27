@@ -83,23 +83,55 @@ smtpEmail \
 
 Windows:
 
-- Install the smtpEmailWindows.exe file
+```bash
+- Download the smtpEmailWindows.exe file
 - run the below command
-.\smtpEmailWindows.exe -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+.\smtpEmailWindows.exe 
+  -host smtp.gmail.com 
+  -port 587 
+  -username your@gmail.com 
+  -password your-app-password 
+  -from your@gmail.com 
+  -to recipient@example.com 
+  -subject "Hello from Go!" 
+  -body "This email was sent using Go!"
 - You will get this message "Email sent successfully!"
 - Now you can check the receipent mailbox
+```
 
 Linux:
-- Install the smtpEmaillinux file 
-- run the below command
-./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
-- You will get this message "Email sent successfully!"
-- Now you can check the receipent mailbox
 
-mac:
-- Install the smtpEmailMac file 
+```bash
+- Download the smtpEmailLinux file
 - run the below command
-./smtpEmail -host email-smtp.us-east-1.amazonaws.com -port 587 -username XXXXXXXXXX -password XXXXXXXXXXXXXXXXXXXXXXXXXXXX -from your@gmail.com -to recipient@example.com -subject "Hello from Go!" -body "This email was sent using Go!"
+./smtpEmailLinux \
+  -host smtp.gmail.com \
+  -port 587 \
+  -username your@gmail.com \
+  -password your-app-password \
+  -from your@gmail.com \
+  -to recipient@example.com \
+  -subject "Hello from Go!" \
+  -body "This email was sent using Go!"
 - You will get this message "Email sent successfully!"
 - Now you can check the receipent mailbox
+```
+
+Mac:
+
+```bash
+- Download the smtpEmailMac file
+- run the below command
+./smtpEmailMac \
+  -host smtp.gmail.com \
+  -port 587 \
+  -username your@gmail.com \
+  -password your-app-password \
+  -from your@gmail.com \
+  -to recipient@example.com \
+  -subject "Hello from Go!" \
+  -body "This email was sent using Go!"
+- You will get this message "Email sent successfully!"
+- Now you can check the receipent mailbox
+```
 
