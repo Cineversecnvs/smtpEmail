@@ -100,13 +100,9 @@ Windows:
 ```
 
 Linux:
-<<<<<<< HEAD
 
 ```bash
 - Download the smtpEmailLinux file
-=======
-- Install the smtpEmailLinux file 
->>>>>>> 2d9ba7636b8a90d667821036262a432e611b866d
 - run the below command
 ./smtpEmailLinux \
   -host smtp.gmail.com \
